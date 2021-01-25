@@ -16,7 +16,7 @@ async function getPosts() {
 export const getStaticProps = async ({ params }) => {
   const posts = await getPosts();
   return {
-    revalidate: 3600,
+    revalidate: 60,
     props: { posts },
   };
 };
