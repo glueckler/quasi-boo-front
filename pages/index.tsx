@@ -25,7 +25,7 @@ const Home: React.FC<{ posts: PostInterface[] }> = ({ posts }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>quasi boo</title>
+        <title>quasi boo :)</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
