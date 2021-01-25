@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Link from 'next/Link';
+import Link from 'next/link';
 import { PostInterface } from '../types/PostInterface';
 
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../utils/urls';
