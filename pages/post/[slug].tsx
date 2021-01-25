@@ -1,4 +1,4 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../../utils/urls';
 import styles from '../../styles/Home.module.css';
