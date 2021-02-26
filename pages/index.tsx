@@ -1,7 +1,9 @@
+import Image from 'next/image';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import classNames from 'classnames';
 import { PostInterface } from '../types/PostInterface';
+import styles from '../styles/Home.module.scss';
 
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../utils/urls';
 
@@ -21,13 +23,44 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 
+const fontPreloader = (fonts) => (
+  <>
+    {fonts.map((font) => (
+      <>
+        <link
+          rel="preload"
+          href={`/fonts/futura/${font}.woff2`}
+          as="font"
+          crossOrigin=""
+        ></link>
+        <link
+          rel="preload"
+          href={`/fonts/futura/${font}.woff`}
+          as="font"
+          crossOrigin=""
+        ></link>
+      </>
+    ))}
+  </>
+);
+
 const Home: React.FC<{ posts: PostInterface[] }> = ({ posts }) => {
   return (
-    <div className={styles.container}>
+    <div className={classNames(styles.container, 'home-container')}>
       <Head>
-        <title>quasi boo :)</title>
+        <title>quasi glü</title>
         <link rel="icon" href="/favicon.ico" />
+        {fontPreloader(['Futura-Bold', 'Futura-Black-Bold'])}
       </Head>
+
+      <div className={styles.header}>
+        <Image
+          src="/img/quasi-logo-md.png"
+          alt="quasi glu logo"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
 
       <ul>
         {posts.map(({ title, slug }) => (

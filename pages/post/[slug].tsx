@@ -1,7 +1,7 @@
 import Link from 'next/link';
+import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../../utils/urls';
-import styles from '../../styles/Home.module.css';
 import { PostInterface } from '../../types/PostInterface';
 
 // see posts api return
@@ -42,7 +42,7 @@ const Post: React.FC<{ post: PostInterface }> = ({ post }) => {
   const { title, html } = post;
 
   return (
-    <div className={styles.container}>
+    <div className={classNames('post-container')}>
       <Link href="/">
         <a>Go back</a>
       </Link>

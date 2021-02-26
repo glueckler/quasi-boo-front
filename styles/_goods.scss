@@ -1,0 +1,8 @@
+$aqua-text: #d0fef6;
+$dark-bg: #002b36;
+
+@mixin desktop() {
+  @media (max-width: 600px) {
+    @content;
+  }
+}

@@ -1,3 +1,11 @@
+@import 'goods';
+
+.header {
+  height: 100px;
+  width: 295px;
+  position: relative;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -5,6 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $dark-bg;
+  color: $aqua-text;
 }
 
 .main {
