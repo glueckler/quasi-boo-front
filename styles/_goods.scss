@@ -1,8 +1,36 @@
 $aqua-text: #d0fef6;
 $dark-bg: #002b36;
+$main-bg: white;
+$main-accent: #002b36;
 
-@mixin desktop() {
-  @media (max-width: 600px) {
+$breakpoint-xs: 1px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1920px;
+
+@mixin large {
+  @media (min-width: #{$breakpoint-lg}) {
     @content;
   }
 }
+
+@mixin medium {
+  @media (min-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (min-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+
+// using these mixins
+// .example-menu-item {
+//   @include small {
+//     min-width: 209px;
+//     font-size: 13px;
+//   }
+// }

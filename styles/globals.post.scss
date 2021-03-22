@@ -1,11 +1,41 @@
+@import './goods.scss';
+
 .post-container {
-  max-width: 700px;
+  max-width: $breakpoint-md;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 .post-container h1 {
   font-family: Futura, sans-serif;
   font-weight: 900;
-  font-size: 3em;
-  line-height: 2;
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+// see docs here: https://ghost.org/docs/themes/content/
+.kg-image-card {
+  width: 100%;
+  margin: 0;
+}
+
+.kg-image-card.kg-width-full {
+  // full width trick: https://css-tricks.com/full-width-containers-limited-width-parents/
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: $breakpoint-lg;
+  }
+}
+
+.kg-image {
+  margin: 0;
+  width: 100%;
 }

@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../../utils/urls';
 import { PostInterface } from '../../types/PostInterface';
+import { MenuBar } from '../../components/menu-bar';
 
 // see posts api return
 // https://ghost.org/docs/content-api/#posts
@@ -42,13 +43,13 @@ const Post: React.FC<{ post: PostInterface }> = ({ post }) => {
   const { title, html } = post;
 
   return (
-    <div className={classNames('post-container')}>
-      <Link href="/">
-        <a>Go back</a>
-      </Link>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
-    </div>
+    <>
+      <MenuBar />
+      <div className={classNames('post-container')}>
+        <h1>{title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      </div>
+    </>
   );
 };
 
