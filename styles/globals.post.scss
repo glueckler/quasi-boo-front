@@ -1,5 +1,9 @@
 @import './goods.scss';
 
+h3 {
+  font-family: Futura, sans-serif;
+}
+
 .post-container {
   max-width: $breakpoint-md;
   margin: 0 auto;

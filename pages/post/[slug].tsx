@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../../utils/urls';
 import { PostInterface } from '../../types/PostInterface';
 import { MenuBar } from '../../components/menu-bar';
+import { PostFooter } from '../../components/post-footer';
 
 // see posts api return
 // https://ghost.org/docs/content-api/#posts
@@ -48,6 +49,7 @@ const Post: React.FC<{ post: PostInterface }> = ({ post }) => {
       <div className={classNames('post-container')}>
         <h1>{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
+        <PostFooter />
       </div>
     </>
   );

@@ -53,14 +53,7 @@ const Home: React.FC<{ posts: PostInterface[] }> = ({ posts }) => {
         {fontPreloader(['Futura-Bold', 'Futura-Black-Bold'])}
       </Head>
 
-      <div className={styles.header}>
-        <Image
-          src="/img/quasi-logo-md.png"
-          alt="quasi glu logo"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+      <div className={styles.header}>quasi glü</div>
 
       <ul>
         {posts.map(({ title, slug }) => (
