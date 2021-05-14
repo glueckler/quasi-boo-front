@@ -6,6 +6,8 @@ import { PostInterface } from '../types/PostInterface';
 import styles from '../styles/Home.module.scss';
 
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../utils/urls';
+import { PostList } from '../components/post-list';
+import React from 'react';
 
 async function getPosts() {
   const fields = 'fields=title,slug';
@@ -26,7 +28,7 @@ export const getStaticProps = async ({ params }) => {
 const fontPreloader = (fonts) => (
   <>
     {fonts.map((font) => (
-      <>
+      <React.Fragment key={font}>
         <link
           rel="preload"
           href={`/fonts/futura/${font}.woff2`}
@@ -39,7 +41,7 @@ const fontPreloader = (fonts) => (
           as="font"
           crossOrigin=""
         ></link>
-      </>
+      </React.Fragment>
     ))}
   </>
 );
@@ -55,15 +57,7 @@ const Home: React.FC<{ posts: PostInterface[] }> = ({ posts }) => {
 
       <div className={styles.header}>quasi glü</div>
 
-      <ul>
-        {posts.map(({ title, slug }) => (
-          <li key={slug}>
-            <Link href="/post/[slug]" as={`/post/${slug}`}>
-              {title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <PostList posts={posts} />
     </div>
   );
 };

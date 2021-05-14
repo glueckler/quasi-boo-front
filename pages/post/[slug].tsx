@@ -68,7 +68,7 @@ const Post: React.FC<{ post: PostInterface }> = ({ post }) => {
               <h1 className="post-full-title">{title}</h1>
               {primaryTag && (
                 <section className="post-full-tags">
-                  <Link href={primaryTag.url}>
+                  <Link href={`/tag/${primaryTag.slug}`}>
                     <a>{primaryTag.name}</a>
                   </Link>
                 </section>
