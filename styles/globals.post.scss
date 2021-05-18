@@ -125,7 +125,7 @@ $post-border: 3px solid black;
 .post-full-content {
   position: relative;
   margin: 0 auto;
-  padding: 2em 10px 3em;
+  padding: 0.1em 10px 3em;
   min-height: 230px;
   font-family: $content-font;
   font-size: 2rem;
@@ -211,6 +211,25 @@ $post-border: 3px solid black;
   .post-full-content video {
     width: 100%;
   }
+}
+
+.post-full-content figure {
+  margin: 1.5em 0 3em;
+}
+
+.post-full-content figure img {
+  margin: 0;
+}
+
+.post-full-content figcaption {
+  margin: 1em 0 0;
+  font-size: 80%;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.kg-width-full figcaption {
+  padding: 0 1.5em;
 }
 
 /* Full bleed images (#full)
