@@ -6,13 +6,14 @@ export const SiteFooter = () => {
       <div className="site-footer-content inner">
         <section className="copyright">dean glü © 2021</section>
         <nav className="site-footer-nav">
-          <a href="https://quasiglu.com">Latest Posts</a>
-          <a
-            href="https://www.facebook.com/ghost"
-            target="_blank"
-            rel="noopener"
-          >
-            Facebook
+          <Link href="/">
+            <a>Latest Posts</a>
+          </Link>
+          <a href="https://github.com/glueckler" target="_blank" rel="noopener">
+            Github
+          </a>
+          <a href="https://deanglueckler.com" target="_blank" rel="noopener">
+            About me
           </a>
         </nav>
       </div>

@@ -51,7 +51,7 @@ a {
 /* Centered content container blocks */
 .inner {
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: $site-inner-width;
   width: 100%;
 }
 

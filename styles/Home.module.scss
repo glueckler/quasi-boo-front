@@ -2,32 +2,32 @@
 
 .header {
   font-family: Futura, sans-serif;
-  font-size: 2em;
+  font-size: 2.6rem;
   font-weight: 800;
 }
 
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: white;
 }
 
 .main {
   padding: 5rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.main a {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.footerInner {
+  justify-content: center;
 }

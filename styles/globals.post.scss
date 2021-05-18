@@ -63,7 +63,7 @@
 .post-full-header {
   margin: 0 auto;
   padding: 4em 6em 2em 10px;
-  max-width: 1040px;
+  max-width: $site-inner-width;
 }
 
 .post-full-meta {
@@ -128,7 +128,7 @@ $post-border: 3px solid black;
   padding: 2em 10px 3em;
   min-height: 230px;
   font-family: $content-font;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1.6em;
   background: #fff;
   border-bottom: $post-border;
@@ -136,7 +136,7 @@ $post-border: 3px solid black;
 
 @media (max-width: $breakpoint-md) {
   .post-full-content {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -203,10 +203,10 @@ $post-border: 3px solid black;
 .post-full-content video {
   display: block;
   margin: 1.5em auto;
-  max-width: 1040px;
+  max-width: $site-inner-width;
   height: auto;
 }
-@media (max-width: 1040px) {
+@media (max-width: $site-inner-width) {
   .post-full-content img,
   .post-full-content video {
     width: 100%;
@@ -363,12 +363,12 @@ Usage (In Ghost editor):
 
 .post-full-content h3 {
   margin: 0.5em 0 0.2em 0;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 @media (max-width: $breakpoint-sm) {
   .post-full-content h3 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 }
 

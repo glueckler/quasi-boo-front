@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.scss';
 import { CONTENT_API_PATH, BLOG_URL, CONTENT_API_KEY } from '../utils/urls';
 import { PostList } from '../components/post-list';
 import React from 'react';
+import { SiteFooter } from '../components/site-footer';
 
 async function getPosts() {
   const fields = 'fields=title,slug';
@@ -48,17 +49,42 @@ const fontPreloader = (fonts) => (
 
 const Home: React.FC<{ posts: PostInterface[] }> = ({ posts }) => {
   return (
-    <div className={classNames(styles.container, 'home-container')}>
+    <>
       <Head>
         <title>quasi glü</title>
         <link rel="icon" href="/favicon.ico" />
         {fontPreloader(['Futura-Bold', 'Futura-Black-Bold'])}
       </Head>
+      <div className={classNames(styles.container, 'home-container')}>
+        <div className={styles.main}>
+          <h1 className={styles.header}>quasi glü</h1>
 
-      <div className={styles.header}>quasi glü</div>
-
-      <PostList posts={posts} />
-    </div>
+          <PostList posts={posts} />
+        </div>
+      </div>
+      <footer className="site-footer outer">
+        <div
+          className={classNames(
+            styles.footerInner,
+            'site-footer-content',
+            'inner'
+          )}
+        >
+          <nav className="site-footer-nav">
+            <a
+              href="https://github.com/glueckler"
+              target="_blank"
+              rel="noopener"
+            >
+              Github
+            </a>
+            <a href="https://deanglueckler.com" target="_blank" rel="noopener">
+              About me
+            </a>
+          </nav>
+        </div>
+      </footer>
+    </>
   );
 };
 
