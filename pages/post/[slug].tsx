@@ -62,6 +62,7 @@ const Post: React.FC<{ post: PostInterface }> = ({ post }) => {
   return (
     <>
       <Head>
+        <title>quasi glü</title>
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
           integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
@@ -70,8 +71,8 @@ const Post: React.FC<{ post: PostInterface }> = ({ post }) => {
         ></script>
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
-          integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"
+          integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />

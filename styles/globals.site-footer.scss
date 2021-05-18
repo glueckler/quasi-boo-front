@@ -1,3 +1,5 @@
+@import './goods.scss';
+
 /* 11. Site Footer
 /* ---------------------------------------------------------- */
 
@@ -6,7 +8,7 @@
   padding-top: 20px;
   padding-bottom: 60px;
 
-  background: color(var(--darkgrey) l(-15%));
+  background: color($dark-grey l(-15%));
 }
 
 .site-footer-content {

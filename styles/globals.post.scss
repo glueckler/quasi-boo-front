@@ -83,7 +83,7 @@
 .post-full-title {
   font-family: $header-font;
   margin: 0;
-  color: color(var(--darkgrey) l(-5%));
+  color: color($dark-grey l(-5%));
 }
 
 .date-divider {
@@ -187,7 +187,7 @@ $post-border: 3px solid black;
 
 .post-full-content strong,
 .post-full-content em {
-  color: color(var(--darkgrey) l(-5%));
+  color: color($dark-grey l(-5%));
 }
 
 .post-full-content small {
@@ -301,11 +301,11 @@ Usage (In Ghost editor):
   margin: 1.5em 0 3em;
   padding: 20px;
   max-width: 100%;
-  border: color(var(--darkgrey) l(-10%)) 1px solid;
+  border: color($dark-grey l(-10%)) 1px solid;
   color: var(--whitegrey);
   font-size: 1.4rem;
   line-height: 1.5em;
-  background: color(var(--darkgrey) l(-3%));
+  background: color($dark-grey l(-3%));
   border-radius: 5px;
 }
 
@@ -352,7 +352,7 @@ Usage (In Ghost editor):
 .post-full-content h4,
 .post-full-content h5,
 .post-full-content h6 {
-  color: color(var(--darkgrey) l(-5%));
+  color: color($dark-grey l(-5%));
   font-family: $header-font;
   font-weight: 900;
   line-height: 1.5;
@@ -535,7 +535,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content table th {
-  color: var(--darkgrey);
+  color: $dark-grey;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -591,7 +591,7 @@ Usage (In Ghost editor):
 .post-full-content .kg-bookmark-container {
   display: flex;
   font-family: $header-font;
-  color: var(--darkgrey);
+  color: $dark-grey;
   text-decoration: none;
   min-height: 148px;
   box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.09);
