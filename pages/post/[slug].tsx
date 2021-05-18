@@ -65,15 +65,15 @@ const Post: React.FC<{ post: PostInterface }> = ({ post }) => {
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"
           integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         ></script>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
           integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
       </Head>
       <SiteHeader postTitle={title} />
